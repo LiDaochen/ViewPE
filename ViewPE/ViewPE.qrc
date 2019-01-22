@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="menu">
+    <file>Resources/duihao.png</file>
+    <file>Resources/about.png</file>
+    <file>Resources/DosHeader.png</file>
+    <file>Resources/fileheader.png</file>
+    <file>Resources/Import.png</file>
+    <file>Resources/open_file.png</file>
+    <file>Resources/OptionalHeader.png</file>
+    <file>Resources/quit.png</file>
+    <file>Resources/section.png</file>
+    <file>Resources/Table.png</file>
+  </qresource>
+  <qresource prefix="Tray">
+    <file>Resources/tray.png</file>
+  </qresource>
+</RCC>

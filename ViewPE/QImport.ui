@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QImport</class>
+ <widget class="QWidget" name="QImport">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>632</width>
+    <height>381</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>[ Import Descriptor (导入表) ]</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTreeWidget" name="treeWidget">
+     <column>
+      <property name="text">
+       <string>DLL Name</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>OriginalFirstThunk</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>TimeDateStamp</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ForwarderChain</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Name(RVA)</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>FirstThunk</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTreeWidget" name="treeWidget_2">
+     <column>
+      <property name="text">
+       <string>Thunk RVA</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Thunk Offset</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Thunk Value</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Hint</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>API Name</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ViewPEClass</class>
+ <widget class="QMainWindow" name="ViewPEClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>667</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ViewPE</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>271</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;Adobe 黑体 Std R&quot;;
+color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="title">
+     <string>重要数据</string>
+    </property>
+    <widget class="QLineEdit" name="FileAlignment">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>150</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="OEP">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>90</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="SizeOfOptionalHeader">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>180</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold Condensed&quot;;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>扩展头大小：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold Condensed&quot;;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>程序入口点：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold Condensed&quot;;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>内存对齐粒度：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ImageBase">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold Condensed&quot;;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>默认加载基址：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="NumberOfSections">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>210</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="SectionAlignment">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>120</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold Condensed&quot;;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>区段数量：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold Condensed&quot;;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>文件对齐粒度：</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>667</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件(F)</string>
+    </property>
+    <addaction name="actionOpenFile"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>帮助(H)</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menu_V">
+    <property name="title">
+     <string>查看(V)</string>
+    </property>
+    <addaction name="actionToolBar"/>
+    <addaction name="actionStatusBar"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_V"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpenFile"/>
+   <addaction name="separator"/>
+   <addaction name="actionDosHeader"/>
+   <addaction name="actionFileHeader"/>
+   <addaction name="actionOptionalHeader"/>
+   <addaction name="separator"/>
+   <addaction name="actionDataDirectory"/>
+   <addaction name="separator"/>
+   <addaction name="actionSectionHeader"/>
+   <addaction name="separator"/>
+   <addaction name="actionImportDescriptor"/>
+   <addaction name="separator"/>
+   <addaction name="actionAbout"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="ViewPE.qrc">
+     <normaloff>:/menu/Resources/about.png</normaloff>:/menu/Resources/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于ViewPE</string>
+   </property>
+  </action>
+  <action name="actionOpenFile">
+   <property name="icon">
+    <iconset resource="ViewPE.qrc">
+     <normaloff>:/menu/Resources/open_file.png</normaloff>:/menu/Resources/open_file.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开(O)...     Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="ViewPE.qrc">
+     <normaloff>:/menu/Resources/quit.png</normaloff>:/menu/Resources/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出(Q)</string>
+   </property>
+  </action>
+  <action name="actionDosHeader">
+   <property name="icon">
+    <iconset resource="ViewPE.qrc">
+     <normaloff>:/menu/Resources/DosHeader.png</normaloff>:/menu/Resources/DosHeader.png</iconset>
+   </property>
+   <property name="text">
+    <string>IMAGE_DOS_HEADER(DOS文件头)</string>
+   </property>
+  </action>
+  <action name="actionFileHeader">
+   <property name="icon">
+    <iconset resource="ViewPE.qrc">
+     <normaloff>:/menu/Resources/fileheader.png</normaloff>:/menu/Resources/fileheader.png</iconset>
+   </property>
+   <property name="text">
+    <string>IMAGE_FILE_HEADER(映像文件头)</string>
+   </property>
+  </action>
+  <action name="actionOptionalHeader">
+   <property name="icon">
+    <iconset resource="ViewPE.qrc">
+     <normaloff>:/menu/Resources/OptionalHeader.png</normaloff>:/menu/Resources/OptionalHeader.png</iconset>
+   </property>
+   <property name="text">
+    <string>IMAGE_OPTIONAL_HEADER(可选映像头)</string>
+   </property>
+  </action>
+  <action name="actionDataDirectory">
+   <property name="icon">
+    <iconset resource="ViewPE.qrc">
+     <normaloff>:/menu/Resources/Table.png</normaloff>:/menu/Resources/Table.png</iconset>
+   </property>
+   <property name="text">
+    <string>IMAGE_DATA_DIRECTORY(数据目录表)</string>
+   </property>
+  </action>
+  <action name="actionSectionHeader">
+   <property name="icon">
+    <iconset resource="ViewPE.qrc">
+     <normaloff>:/menu/Resources/section.png</normaloff>:/menu/Resources/section.png</iconset>
+   </property>
+   <property name="text">
+    <string>IMAGE_SECTION_HEADER(区段表</string>
+   </property>
+  </action>
+  <action name="actionImportDescriptor">
+   <property name="icon">
+    <iconset resource="ViewPE.qrc">
+     <normaloff>:/menu/Resources/Import.png</normaloff>:/menu/Resources/Import.png</iconset>
+   </property>
+   <property name="text">
+    <string>IMAGE_IMPORT_DESCRIPTOR(导入表)</string>
+   </property>
+  </action>
+  <action name="actionToolBar">
+   <property name="icon">
+    <iconset resource="ViewPE.qrc">
+     <normaloff>:/menu/Resources/duihao.png</normaloff>:/menu/Resources/duihao.png</iconset>
+   </property>
+   <property name="text">
+    <string>工具栏(T)</string>
+   </property>
+  </action>
+  <action name="actionStatusBar">
+   <property name="icon">
+    <iconset resource="ViewPE.qrc">
+     <normaloff>:/menu/Resources/duihao.png</normaloff>:/menu/Resources/duihao.png</iconset>
+   </property>
+   <property name="text">
+    <string>状态栏(S)</string>
+   </property>
+  </action>
+  <action name="actionOpenMainDlg">
+   <property name="text">
+    <string>打开主面板</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ViewPE.qrc"/>
+ </resources>
+ <connections/>
+</ui>
